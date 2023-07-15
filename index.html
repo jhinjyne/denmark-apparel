@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="maincss.css">
+ 
+</head>
+<body>
+    <header>
+        <div class="headerinfo">
+            <div class="webtitle">
+                    
+                    <div class="columnlogo">
+                        <img class="logo" src="C:\xampp\htdocs\denmarkapparel\icons/logo.png" alt="logo">
+                    </div>
+                    <div class="columntext">
+                       <p class="tittlestyle">DENMARK<br/>APPAREL</p>
+                    </div>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="#news" class="navitems"><img class="triangle" src="C:\xampp\htdocs\denmarkapparel\icons/dropdown.png">MENSWEAR</a>
+                <a href="#contact" class="navitems"><img class="triangle" src="C:\xampp\htdocs\denmarkapparel\icons/dropdown.png">FOOTWEAR</a>
+                <a href="#about" class="navitems"><img class="triangle" src="C:\xampp\htdocs\denmarkapparel\icons/dropdown.png">ACCESSORIES</a>
+                <a href="#about" class="navitems"><img class="triangle" src="C:\xampp\htdocs\denmarkapparel\icons/dropdown.png">CLEARANCE</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img class="menuicon" src="C:\xampp\htdocs\denmarkapparel\icons/menu.png" alt="menuicon"> 
+                </a>
+            </div>
+        </div>
+    </header>
+
+  <div class="body1">
+    <div class="columntittle">
+        <p class="maintext">40 % OFF</p>
+        <p class="subtext">MEN’S FALL 
+            <br/>COLLECTION</p>
+        <button type="button" class="shopbutton">SHOP NOW</button>
+    </div>
+    <div class="columnpic">
+        <img class="mainpic" src="C:\xampp\htdocs\denmarkapparel\icons/mainpic.png" alt="logo">
+    </div>
+  </div>
+
+  <div class="belowbody">
+      <div class="bodyleft">
+              <img class="icontruck" src="C:\xampp\htdocs\denmarkapparel\icons/truck.png" alt="logo">
+            <p class="tittlehead">FREE SHIPPING</p>
+            <p class="bodytext">When you spend $50.00 minimum before taxes on all online orders.</p>
+            <p class="linktext">DETAILS.</p>
+      </div>
+      <div class="bodycenter">
+          <img class="iconshop" src="C:\xampp\htdocs\denmarkapparel\icons/price.png" alt="logo">
+        <p class="tittlehead">FREE SHIPPING</p>
+        <p class="bodytext">Present a qualifying competitor’s ad and we’ll gladly price match!</p>
+        <p class="linktext">DETAILS.</p>
+      </div>
+      <div class="bodyright">
+          <img class="iconshop" src="C:\xampp\htdocs\denmarkapparel\icons/shop.png" alt="logo">
+        <p class="tittlehead">FREE SHIPPING</p>
+        <p class="bodytext">Buy online, and them pick up your order in store or curbside.</p>
+        <p class="linktext">DETAILS.</p>
+      </div>
+    </div>
+
+<div class="featured">
+  <div class="featbox">
+    <hr class="horizontal-line">
+    <div class="feattext">FEATURED ON:</div>
+    <hr class="horizontal-line">
+  </div>
+
+  <div class="image-container">
+    <img class="iconinsider" src="C:\xampp\htdocs\denmarkapparel\icons/insider.png" alt="logo">
+    <img class="iconrunway" src="C:\xampp\htdocs\denmarkapparel\icons/runway.png" alt="logo">
+    <img class="iconmagazine" src="C:\xampp\htdocs\denmarkapparel\icons/magazine.png" alt="logo">
+    <img class="iconcq" src="C:\xampp\htdocs\denmarkapparel\icons/cq.png" alt="logo">
+  </div>
+  
+</div>
+
+<div class="customerpicks">
+  <div class="customerbox">
+    <hr class="horizontal-line2">
+    <div class="customertext">CUSTOMER TOP PICKS:</div>
+    <hr class="horizontal-line2">
+  </div>
+  <div class="boxholder">
+      
+  <div class="suits">
+    <img class="iconsuit" src="C:\xampp\htdocs\denmarkapparel\icons/suit.png" alt="logo">
+        <p class="tittlesuit">DENMARK CLASSIC <br/> SIGNATURE MEN’S SUIT</p>
+        <img class="iconstar" src="C:\xampp\htdocs\denmarkapparel\icons/4star.png" alt="logo">
+        <p class="suittext">
+          “With the custom fitting
+          options, I finally found a
+          suit that fits comfortably!
+          Great material too!”
+        </p>
+        <p class="nametext">Todd Alejandra, California</p>
+        <button type="button" class="watchsuitbutton">BROWSE SUITS</button>
+  </div>
+  <div class="watches">
+    <img class="iconsuit" src="C:\xampp\htdocs\denmarkapparel\icons/watch.png" alt="logo">
+    <p class="tittlesuit">DENMARK MEN’S  <br/> SIGNATURE MEN’S SUIT</p>
+    <img class="iconstar" src="C:\xampp\htdocs\denmarkapparel\icons/5star.png" alt="logo">
+    <p class="suittext">
+      “I bought this as a gift for
+      my husband and ge loved it!”
+      Can be worn for different 
+      occasions!”
+    </p>
+    <p class="nametext">Alex Brown, Florida</p>
+    <button type="button" class="watchsuitbutton">BROWSE WATCH</button>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>

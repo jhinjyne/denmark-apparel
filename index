@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="maincss.css">
+</head>
+<body>
+    <header>
+        
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active"><div class="logo"><img src="C:\xampp\htdocs\denmarkapparel\icons/logo.png" alt="logo"></div></a>
+    <a href="#news">MENSWEAR</a>
+    <a href="#contact">FOOTWEAR</a>
+    <a href="#about">ACCESSORIES</a>
+    <a href="#about">CLEARANCE</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+    </header>
+
+
+
+  <div class="container">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
