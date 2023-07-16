@@ -1,19 +1,19 @@
 body{
+  width: 100%;
   padding: 0;
-  margin: 0; display: flex;
+  margin: 0;
+  display: flex;
   flex-direction: column;
   font-family: Anonymous Pro, Crimson Text, Bodoni Moda;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .container {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 375px;
-  }
 }
 
 header {
@@ -25,11 +25,6 @@ header {
 .headerinfo{
   overflow: hidden;
   padding-top: 20px;
-  flex-shrink: 0;
-}
-.webtittle{
-  width: 280.125px;
-  height: 58px;
   flex-shrink: 0;
 }
 .logo{
@@ -64,11 +59,15 @@ flex-shrink: 0;
   flex-shrink: 0;
 }
 .topnav{
+  
+  display: flex;
   overflow: hidden;
   padding-top: 12px;
+  justify-content: flex-end;
+  margin-right: 60px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1365px) {
   .topnav a:not(.icon) {
     display: none; 
   }
@@ -78,7 +77,10 @@ flex-shrink: 0;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1365px) {
+  .topnav{
+    margin-right: unset;
+  }
   .topnav.responsive {
     width: 100%;
     height: 100vh;
@@ -151,12 +153,14 @@ float: left;
 
 /* body */
 
-.body
+.body1
 {
   width: 100%;
 height: 590px;
 flex-shrink: 0;
 background: #FBFBFB;
+display: flex;
+justify-content: center;
 }
 
 .columntittle{
@@ -179,7 +183,7 @@ font-family: Crimson Text;
 font-size: 75px;
 font-style: normal;
 font-weight: 400;
-line-height: 52px; /* 65% */
+line-height: 52px; 
 letter-spacing: 0.8px;
 padding: 0;
 margin-bottom: 0px;
@@ -210,14 +214,15 @@ letter-spacing: 1.2px;
 }
 
 
-@media screen and (max-width: 1280px) {
-  .body1{
+@media screen and (max-width: 1365px) {
+  .body1{ overflow: auto;
   display: flex;
   flex-direction: column-reverse;
+align-items: center;
   } 
   .columntittle{
 margin-top: 0;
-margin-left: 30px;
+margin-left: unset;
   }
   .maintext{
 margin-top: 5px;
@@ -243,7 +248,34 @@ margin-top: 5px;
   width: 100%;
 height: 226px;
 flex-shrink: 0;
+display: flex;
+justify-content: center;
 }
+
+
+@media screen and (max-width: 1261px) {
+  .belowbody{
+height: 588px;
+flex-shrink: 0;
+display: unset;
+justify-content: center;
+  }
+  
+  .belowbody .bodyleft{
+  margin-left: 20px;
+  }
+  .belowbody .bodycenter{
+  margin-left: 20px;
+  }
+  .belowbody .bodyright{
+  margin-left: 20px;
+  }
+  .belowbody .bodytext{
+    padding-right: 80px;    
+  }
+  
+}
+
 .bodyleft{
   float: left;
   width: 400.488px;
@@ -289,7 +321,7 @@ flex-shrink: 0;
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
-  line-height: 52px; /* 247.619% */
+  line-height: 52px; 
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 0;
@@ -298,13 +330,13 @@ flex-shrink: 0;
 {
   margin-top: 0;
   padding-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   color: #FFF;
-font-family: monospace;
-font-size: 14px;
+font-family: sans-serif;
+font-size: 12px;
 font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 142.857% */
+font-weight: lighter;
+line-height: 20px;
 }
 .linktext{
   color: #FFF;
@@ -312,17 +344,54 @@ font-family: Inter;
 font-size: 12px;
 font-style: normal;
 font-weight: 300;
-line-height: 20px; /* 166.667% */
+line-height: 20px; 
 text-decoration-line: underline;
 }
 
 /*featured page*/
-.featured{background: #FFF;
+.featured{ 
+  overflow: auto;
+  background: #FFF;
   width: 100%;
 height: 328px;
 flex-shrink: 0;
 }
 
+@media screen and (max-width: 1223px) {
+  .featured{
+    height: 611px;
+  }
+  .featured .image-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: unset;
+    margin-left: 50px;
+    margin-right:  50px;
+    
+  }
+  .featured .featbox{
+    margin-top: 10px;
+  }
+  .iconfeatured{
+    margin-bottom: 10px;
+    margin-top: unset;
+  }.featured .linefeature{
+    display: block;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;}
+    .featured .linecirclefeature{
+      display: block;
+      flex-grow: 1;
+      height: 1px;
+      background-color: #000000;
+      margin: 2px;
+    }
+}
 .featbox {
   display: flex;
   align-items: center;
@@ -350,22 +419,7 @@ flex-shrink: 0;
 
 
 
-.iconinsider{
-  float: left;
-  margin-top: 15px;
-  margin-right: 20px;
-}
-.iconrunway{
-  float: left;
-  margin-top: 15px;
-  margin-right: 20px;
-}
-.iconmagazine{
-  float: left;
-  margin-top: 15px;
-  margin-right: 20px;
-}
-.iconcq{
+.iconfeatured{
   float: left;
   margin-top: 15px;
   margin-right: 20px;
@@ -386,7 +440,82 @@ flex-shrink: 0;
 height: 670px;
 flex-shrink: 0;
 background: #5D3F3D;
+padding-top: 0;
 }
+
+
+@media screen and (max-width: 1200px){
+  .customerpicks{
+    height: 1151px;
+  }
+  .boxholder {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 160px;
+    margin-left: 160px;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  }
+  @media screen and (max-width: 500px){
+    .suits .iconsuit{
+      width: 121px;
+      height: 306px;
+      flex-shrink: 0;
+      float: left;
+    margin-left: 120px;
+    margin-right: 15px;
+    }.boxholder .suits .tittlesuit{ 
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-right: 150px;
+    }.suits .iconstar{
+      width: 193px;
+      height: 25px;
+      flex-shrink: 0;
+    }
+    .boxholder .suits .suittext{
+      padding-right: 150px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }.boxholder .suits .nametext{
+        padding-right: 150px;
+        margin-top: 20px;
+    }
+
+
+    .customerpicks .watches .iconsuit{
+      width: 121px;
+      height: 306px;
+      flex-shrink: 0;
+      float: left;
+    margin-left: 120px;
+    margin-right: 15px;
+    }.boxholder .watches .tittlesuit{ 
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-right: 150px;
+    }.watches .iconstar{
+      width: 193px;
+      height: 25px;
+      flex-shrink: 0;
+    }
+    .boxholder .watches .suittext{
+      padding-right: 150px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }.boxholder .watches .nametext{
+        padding-right: 150px;
+        margin-top: 20px;
+    }
+    .boxholder .watchsuitbutton{
+        width: 280px;
+        margin-left: 150px;
+        
+        }
+    }
+    
 
 
 .customerbox {
@@ -402,6 +531,14 @@ background: #5D3F3D;
   background-color: #ffffff;
   margin: 10px;
 }
+.linefeature{
+  display: none;
+}
+.linecirclefeature{
+  display: none;
+}
+
+
 .customertext {
   color: #ffffff;
   font-family: Playfair Display;
@@ -433,21 +570,14 @@ background: #5D3F3D;
 
 
 .boxholder {
+  align-items: center;
+  justify-content: center;
   display: flex;
-  justify-content: space-between;
   margin-right: 160px;
   margin-left: 160px;
   margin-top: 40px;
 }
 
-.suits .watch{
-  float: left;
-  width: 400.488px;
-  height: 120px;
-  flex-shrink: 0;
-  margin-top: 45px;
-  margin-left: 75px;
-}
 
 .iconsuit{
   float: left;
@@ -459,7 +589,7 @@ font-family: Inter;
 font-size: 19px;
 font-style: normal;
 font-weight: 300;
-line-height: 24px; /* 126.316% */
+line-height: 24px; 
 margin-top: 40px;
 margin-bottom: 30px;
 }
@@ -476,7 +606,7 @@ margin-bottom: 30px;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 25px; /* 125% */
+  line-height: 25px;
   margin-bottom: 50px;
   margin-top: 30px;
 }
@@ -486,7 +616,7 @@ margin-bottom: 30px;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  line-height: 25px; /* 125% */
+  line-height: 25px; 
 }
 
 .watchsuitbutton{
@@ -503,3 +633,181 @@ line-height: normal;
 letter-spacing: 1.2px;
 margin-left: 100px;
 }
+
+/*footer style*/
+.footer{
+  width: 100%;
+height: 100%;
+flex-shrink: 0;
+background: #000;
+}
+.footer p{
+  color: white;
+}
+.bulletnavclass li a{
+  color: #FFF;
+font-family: monospace;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+text-decoration: none;
+}
+.leftinfobox{
+  width: 550.375px;
+height: 167px;
+flex-shrink: 0;
+  float: left;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+.rightinfobox{
+  width: 750px;
+height: 154px;
+flex-shrink: 0;
+  float: left;
+  margin-bottom: 80px;
+margin-top: 50px;
+margin-left: 90px;
+}
+.icontwitter,
+.iconinsta,
+.iconfb{
+  float: left;
+  margin-right: 10px;
+  
+}.iconinsta{
+  margin-top: 3px;
+}.iconfb{
+  padding-right: 10px;
+}
+
+.bulletnavclass{
+  margin-top: 55px;
+  padding-left: 0;
+  margin-left: 0;
+}
+.navlinks{
+  list-style-type: none;
+  columns: 3; 
+  column-gap: 50px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.nametittle{
+  margin-top: 10px;
+  
+  padding-top: 15px;
+}
+
+.storelocations{
+  color: #FFF;
+font-family: Playfair Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+
+.nametittle{
+  margin-top: 10px;
+  color: #FFF;
+font-family: Playfair Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+
+.locationlist{
+  color: #FFF;
+font-family: monospace;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; 
+margin-top: 50px;
+margin-left: 0;
+padding-top: 0;
+}
+.locationcolumn {
+  list-style-type: none;
+  columns: 3; 
+  column-gap: 0px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.locationtittle{
+  font-style: bold;
+  font-weight: 800;
+}
+.locationcolumn .nested-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nested-list li {
+  display: inline;
+  margin-left: 0; 
+}
+
+.nested-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+font-family: monospace;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -0.42px;
+}
+
+.hrfooter{ width: 90%;
+  color: rgb(153, 0, 0);
+  background-color: red;
+}
+
+.centered-hr {
+  margin-top: 1opx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerbottom {
+  display: flex;
+}
+
+.footerbottom span {
+  margin-top: 50px; 
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; 
+  letter-spacing: 0.28px;
+}
+
+.footerbottom .left{
+  margin-left: 90px;
+}
+.footerbottom .right{
+  margin-left: 800px;
+}
+
+
+
+display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;

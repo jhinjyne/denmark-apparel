@@ -32,3 +32,35 @@
 
 
 
+<div class="rightinfobox">
+  <div class="storelocations">
+    <p class="loctittle">STORE LOCATIONS</p>
+  </div>
+  <div class="floridabox">
+    <p class="floridatittle">FLORIDA LOCATION</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    
+  </div>
+  <div class="californiabox">
+    <p class="californiatittle">CALIFORNIA LOCATION</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    
+  </div>
+  <div class="texasbox">
+    <p class="texastittle">TEXAS LOCATION</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    
+  </div>
+</div>

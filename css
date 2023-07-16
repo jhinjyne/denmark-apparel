@@ -57,3 +57,23 @@ header {
   background-color: white;
   padding-top: 2px;
 }
+
+
+
+
+
+
+.bulletnavclass{
+  columns: 2; /* Set the number of columns */
+  column-count: 2; /* Set the number of columns explicitly */
+  column-gap: 10px; /* Set the spacing between columns */
+}
+.navlinks{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+.navlinks li {
+  margin-bottom: 5px; /* Spacing between list items */
+}
